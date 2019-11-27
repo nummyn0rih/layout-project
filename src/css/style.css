@@ -14,6 +14,9 @@ li {
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+
+
 header {
     width: 100%;
     background: #000;
@@ -45,6 +48,9 @@ nav {
 .topnav .icon {
     display: none;
 }
+
+
+
 main {
     display: flex;
     flex-direction: column;
@@ -59,14 +65,19 @@ main .main__welcome p {
     color: #999;
     font-size: 20px;
 }
+main h1 {
+    font-size: 44px;
+}
 main .main__welcome h1 {
     color: #999;
-    font-size: 44px;
     font-weight: lighter;
 }
 .mycompany {
     color: #fcac45;
 }
+
+
+
 .wrapper {
     width: 76%;
     margin: 0 auto;
@@ -110,7 +121,6 @@ main .main__about {
     color: #fff;
 }
 .main__team h1 {
-    font-size: 44px;
     padding-bottom: 30px;
     font-weight: 600;
 }
@@ -119,8 +129,8 @@ main .main__about {
     height: 3px;
     background: #fcac45;
     position: relative;
-    left: 45.5%;
-    margin-bottom: 105px;
+    left: calc(50% - 50px);
+    margin-bottom: 0;
 }
 .photo {
     background: #d7d7d7;
@@ -131,6 +141,7 @@ main .main__about {
 }
 .team__cards {
     display: flex;
+    margin-top: 78px;
 }
 .card {
     margin: 0 40px;
@@ -147,6 +158,40 @@ main .main__about {
 .about__position {
     font-size: 14px;
 }
+
+
+
+.services__cards {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20px;
+}
+.main__services h1 {
+    font-weight: 600;
+    text-align: center;
+    padding: 100px 0 30px;
+    color: #222222;
+}
+.main__services p {
+    text-align: center;
+    color: #6c6c6c;
+    margin: 56px 0 100px;
+    color: #6c6c6c;
+}
+.services__card h4 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #222222;
+}
+.services__card p {
+    margin-top: 6px;
+}
+
+
+
+
 
 
 
@@ -191,7 +236,6 @@ main .main__about {
     }
 
 
-
     main .main__welcome {
         padding: 50px 0;
     }
@@ -222,6 +266,9 @@ main .main__about {
 
     .team__cards {
         flex-direction: column;
+    }
+    .services__cards {
+        grid-template-columns: auto;
     }
 }
 
