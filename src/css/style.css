@@ -164,7 +164,7 @@ main .main__about {
 .services__cards {
     text-align: center;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 20px;
 }
 .main__services h1 {
@@ -190,6 +190,24 @@ main .main__about {
 }
 
 
+
+.main__clients {
+    background: #000;
+    padding: 100px 0 205px;
+    color: #fff;
+    text-align: center;
+}
+.main__clients h1 {
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+.main__clients h1 b {
+    font-weight: 600;
+}
+.main__clients img {
+    margin-top: 112px;
+    margin-left: 30px;
+}
 
 
 
