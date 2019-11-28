@@ -68,9 +68,12 @@ main .main__welcome p {
 main h1 {
     font-size: 44px;
 }
-main .main__welcome h1 {
+.main__welcome h1 {
     color: #999;
     font-weight: lighter;
+}
+.main__welcome h1:after {
+    display: none;
 }
 .mycompany {
     color: #fcac45;
@@ -95,13 +98,17 @@ main .main__about {
 .about__right {
     margin-left: 175px;
     font-size: 18px;
+    text-align: center;
 }
 .about__right h1 {
     display: inline-block;
     font-size: 34px;
     border-bottom: 3px solid #fcac45;
     padding-bottom: 20px;
-    
+    text-align: center;
+}
+.about__right h1:after {
+    display: none;
 }
 .about__right p {
     margin: 32px 0 50px 0;
@@ -112,6 +119,7 @@ main .main__about {
     padding-left: 25px;
     margin-top: 10px;
     color: #5a5a5a;
+    text-align: left;
 }
 .mw-100 {
     min-width: 100%;
@@ -127,14 +135,6 @@ main .main__about {
 }
 .main__team h1 {
     padding-bottom: 30px;
-}
-.line {
-    width: 100px;
-    height: 3px;
-    background: #fcac45;
-    position: relative;
-    left: calc(50% - 50px);
-    margin-bottom: 0;
 }
 .photo {
     background: #d7d7d7;
@@ -304,6 +304,15 @@ input[type=submit] {
     color: #fff;
     margin-right: 0;
     margin-top: 20px;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    padding-top: 30px;
+    border-bottom: 3px solid #fcac45;
 }
 
 
