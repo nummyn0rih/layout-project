@@ -8,16 +8,16 @@
     <title>MyCompany</title>
   </head>
   <body>
-    <header>
+    <header id="home">
       <div class="header__logo"><p>mycompany</p></div>
       <nav>
         <div class="topnav" id="myTopnav">
-          <a href="#">HOME</a>
-          <a href="#">About</a>
-          <a href="#">SERVICES</a>
-          <a href="#">portfolio</a>
-          <a href="#">testimonials</a>
-          <a href="#">CONTACT</a>
+          <a href="#home">HOME</a>
+          <a href="#about">About</a>
+          <a href="#services">SERVICES</a>
+          <a href="#portfolio">portfolio</a>
+          <a href="#testimonials">testimonials</a>
+          <a href="#contact">CONTACT</a>
           <a href="#" id="menu" class="icon">&#9776;</a>
         </div>
       </nav>
@@ -29,10 +29,10 @@
         <p>We are a digital agency with <strong>years of experience</strong> and with <strong>extraordinary people</strong></p>
       </section>
   
-      <section class="wrapper">
+      <section id="about" class="wrapper">
         <div class="main__about">
           <div class="about__left">
-            <img class="mw-100" src="img/left side.png" alt="mac">
+            <img class="mw-100" src="img/left-side.png" alt="mac">
           </div>
           <div class="about__right">
             <h1>Some words <b>about us</b></h1>
@@ -46,7 +46,7 @@
         </div>
       </section>
 
-      <section class="main__team">
+      <section id="team" class="main__team">
         <div class="wrapper">
           <h1><b>our team</b></h1>
           <div class="team__cards">
@@ -78,7 +78,7 @@
         </div>
       </section>
 
-      <section class="main__services">
+      <section id="services" class="main__services">
         <div class="wrapper">
           <h1><b>our services</b></h1>
           <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores
@@ -87,22 +87,22 @@
             cum ab iusto assumenda velit excepturi porro ipsa tenetur.</i></p>
           <div class="services__cards">
             <div class="services__card">
-              <img src="img/Forma 1.png" alt="Web design">
+              <img src="img/Forma-1.png" alt="Web design">
               <h4>Web design</h4>
               <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
             </div>
             <div class="services__card">
-              <img src="img/Forma 2.png" alt="Mobile apps">
+              <img src="img/Forma-2.png" alt="Mobile apps">
               <h4>Mobile apps</h4>
               <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
             </div>
             <div class="services__card">
-              <img src="img/Forma 3.png" alt="Photography">
+              <img src="img/Forma-3.png" alt="Photography">
               <h4>PHOTOGRAPHY</h4>
               <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
             </div>
             <div class="services__card">
-              <img src="img/Forma 4.png" alt="Marketing">
+              <img src="img/Forma-4.png" alt="Marketing">
               <h4>marketing</h4>
               <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
             </div>
@@ -123,7 +123,7 @@
         </div>
       </section>
 
-      <section class="main__works">
+      <section id="portfolio" class="main__works">
         <div class="wrapper">
           <h1>take a look at <b>our work</b></h1>
           <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis,
@@ -153,7 +153,7 @@
         </div>
       </section>
 
-      <section class="main__testimonials">
+      <section id="testimonials" class="main__testimonials">
         <div class="wrapper">
           <h1><b>our clients’</b> testimonials</h1>
           <p class="testimonial">This book is a treatise on the theory of ethics, very popular during the Renaissance.
@@ -162,13 +162,13 @@
         </div>
       </section>
 
-      <section class="contact__form">
+      <section id="contact" class="contact__form">
         <div class="contact__wrapper">
           <h1><b>contact us</b></h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at
             asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <form action="#" name="newform" method="post">
+          <form id="form" action="#" name="newform" method="post">
             <div class="form__inputs">
               <p>Name <span class="red">*</span><input type="text"></p>
               <p>Email address <span class="red">*</span><input type="text"></p>
@@ -176,7 +176,7 @@
             <p>Message <span class="red">*</span></p>
             <textarea name="text"></textarea>
             <div class="button__block">
-              <input type="submit" value="SEND">
+              <input class="submit" type="submit" value="SEND">
             </div>
           </form>
         </div>
